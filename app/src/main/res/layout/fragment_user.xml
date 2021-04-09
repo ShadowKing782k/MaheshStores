@@ -73,5 +73,18 @@
             app:layout_constraintStart_toStartOf="@+id/_dynamic"
             app:layout_constraintTop_toBottomOf="@+id/_dynamic" />
 
+        <TextView
+            android:id="@+id/Invalid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/in_roll"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_roll"
+            app:layout_constraintVertical_bias="0.050000012" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -23,6 +23,7 @@
     <string name="comp">Enter Component Name</string>
     <string name="settings">Settings</string>
     <string name="about">About</string>
+    <string name="in_roll">Invalid Roll No.</string>
     <string-array name="Options">
         <item>Roll No</item>
         <item>Component</item>

@@ -26,5 +26,24 @@
         android:id="@+id/user"
         android:name="com.example.maheshstores.user"
         android:label="fragment_user"
-        tools:layout="@layout/fragment_user" />
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_user_to_userlist"
+            app:destination="@id/userlist" />
+    </fragment>
+    <fragment
+        android:id="@+id/userlist"
+        android:name="com.example.maheshstores.userlist"
+        android:label="fragment_userlist"
+        tools:layout="@layout/fragment_userlist">
+        <argument
+            android:name="Roll_number_1334"
+            android:defaultValue="0"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_userlist_to_user"
+            app:destination="@id/user"
+            app:popUpTo="@id/introduction" />
+    </fragment>
 </navigation>
